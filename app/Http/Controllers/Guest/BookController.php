@@ -7,5 +7,9 @@ use Illuminate\Http\Request;
 
 class BookController extends Controller
 {
-    //
+    public function index()
+    {
+        /* $books = Book::all(); */
+        return view('subpages.book', compact('books'));
+    } 
 }

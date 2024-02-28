@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Guest\MovieController;
+use App\Http\Controllers\Guest\BookController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,5 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/movie',[MovieController::class,'movie'])->name('movie');
+
+Route::get('/book', [BookController::class, 'book'])->name('book');
 
 // Route::get(PERCORSO CON CUI ARRIVARE ALLA PAGINA, FUNZIONE DI CALLBACK CHE MI CREA LA RISPOSTA DA DARE ALL UTENTE)
