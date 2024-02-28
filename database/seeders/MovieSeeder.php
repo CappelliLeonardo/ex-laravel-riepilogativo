@@ -19,7 +19,7 @@ class MovieSeeder extends Seeder
             $movie = new movie();
             // Ne riempio le colonne
             $movie->title = fake()->words(rand(1, 5), true);
-            $movie->author = fake()->name();
+            $movie->director = fake()->name();
             $movie->genre = fake()->words(rand(1,2), true);
             $movie->release_year = fake()->date('Y_m_d').' '.fake()->time();
             $movie->description = fake()->paragraphs();
