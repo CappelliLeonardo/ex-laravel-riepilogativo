@@ -14,3 +14,8 @@
 - Al posto di npm run build, potreste eseguire npm run dev e lasciarlo attivo
 
 6. Aprire un altro terminale ed eseguire il comando php artisan serve
+
+Creazione dei Modelli: Creare due modelli: uno per i film e uno per i libri. Ogni modello deve includere i campi appropriati per memorizzare le informazioni relative ai contenuti multimediali, come titolo, autore/regista, genere, anno di pubblicazione/uscita, e una breve descrizione.
+Creazione delle Migration: Creare le migrazioni per definire gli schemi del database per i modelli dei film e dei libri.
+Creazione dei Seeder: Creare i seeder per popolare il database con dati di esempio per i film e i libri.
+Creazione dei Controller: Creare i controller per gestire le rotte per la visualizzazione della lista completa dei film e dei libri, nonché per visualizzare i dettagli di ciascun film e libro.
