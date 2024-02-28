@@ -22,7 +22,7 @@ class MovieSeeder extends Seeder
             $movie->director = fake()->name();
             $movie->genre = fake()->words(rand(1,2), true);
             $movie->release_year = fake()->date('Y_m_d').' '.fake()->time();
-            $movie->description = fake()->paragraphs();
+            $movie->description = fake()->text();
             // Lo salvo in persistenza
             $movie->save();
         }
