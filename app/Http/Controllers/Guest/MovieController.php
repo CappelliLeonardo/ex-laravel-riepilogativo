@@ -9,6 +9,6 @@ class MovieController extends Controller
 {
     public function movie(){
         // $movie = Movie::all();
-        return view("subpages.movie",compact(""));
+        return view("subpages.movie");
     } 
 }
