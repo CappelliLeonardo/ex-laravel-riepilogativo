@@ -18,7 +18,7 @@ class MovieSeeder extends Seeder
             // Istanzio il model
             $movie = new movie();
             // Ne riempio le colonne
-            $movie->title = fake()->words(rand(1, 5), true);
+            $movie->movie_name = fake()->words(rand(1, 5), true);
             $movie->director = fake()->name();
             $movie->genre = fake()->words(rand(1,2), true);
             $movie->release_year = fake()->date('Y_m_d').' '.fake()->time();
